@@ -14,9 +14,9 @@ a Simple Nodejs Application Ready For Deployement & Automation
 - [ ] Create Nodejs Application
 - [ ] Write Unit/Intergration Tests
 - [ ] Docker Time and do not forget .dockerignore file
-  - [ ] Dockerfile
+  - [x] Dockerfile
   - [ ] Docker-Compose
-  - [ ] .dockerignore
+  - [x] .dockerignore
 - [ ] Setting Up Our CI/CD Pipline
   - [ ] Setup DockerCI Pipeline
 - [ ] Configure Our Secretes
