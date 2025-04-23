@@ -7,5 +7,5 @@ services:
       - "8000:8000"
     container_name: echo_app
     environment:
-      - ENV=production
+      - NODE_ENV=production
         PORT=${PORT}

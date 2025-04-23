@@ -1,8 +1,9 @@
-# Echo Blog
+# Echo
 
 a Simple Nodejs Application Ready For Deployement & Automation
 
-## Tools 
+## Tools
+
 - Docker
 - Docker Compose
 - Nodejs & Express
@@ -10,17 +11,20 @@ a Simple Nodejs Application Ready For Deployement & Automation
 - Trivy
 
 ## Logs
+
 ---
+
 - [ ] Create Nodejs Application
 - [ ] Write Unit/Intergration Tests
-- [ ] Docker Time and do not forget .dockerignore file
+- [x] Docker Time and do not forget .dockerignore file
   - [x] Dockerfile
-  - [ ] Docker-Compose
+  - [x] Docker-Compose
   - [x] .dockerignore
-- [ ] Setting Up Our CI/CD Pipline
-  - [ ] Setup DockerCI Pipeline
+- [x] Setting Up Our CI/CD Pipline
+  - [x] Setup DockerCI Pipeline
 - [ ] Configure Our Secretes
 - [ ] Prepare the Deployment Target
 
-# Bonus 
+# Bonus
+
 - [ ] Adding Kubernetes Orchestration In The Game
