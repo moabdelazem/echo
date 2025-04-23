@@ -1,0 +1,28 @@
+{
+  "name": "echo",
+  "version": "1.0.0",
+  "description": "a simple node applicaiton for devops integration",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "dev:tsx": "tsx src/server.ts"
+  },
+  "keywords": [],
+  "author": "Mohamed Abdelazim",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
