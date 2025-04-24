@@ -1,6 +1,7 @@
 import express, { Request, Response, Application, NextFunction } from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
+import { getHealthStatus } from "./handlers/health.handler";
 
 dotenv.config();
 
@@ -23,12 +24,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 // Healthcheck endpoint
-app.get("/status", (req: Request, res: Response) => {
-  res.status(200).json({
-    status: "Ok",
-    timestamp: new Date().toISOString(),
-  });
-});
+app.get("/status", getHealthStatus);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   console.error(err.stack);
