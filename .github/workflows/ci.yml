@@ -70,11 +70,6 @@ jobs:
               github.event_name == 'push' && github.ref == 'refs/heads/master'
             }}
             type=raw,value=${{ github.sha }}
-          flavor: |
-            latest
-            sha
-            v{{version}}
-            ${{ github.sha }}
 
       # Build the Docker image
       - name: Build Docker image
