@@ -58,7 +58,7 @@ jobs:
         uses: docker/metadata-action@v5
         id: docker_meta # Give this step an ID to reference its outputs
         with:
-          images: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}
+          images: docker.io/moabdelazem/${{ github.event.repository.name }}
 
           # Set the image name to the repository name
           tags: |
