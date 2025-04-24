@@ -15,13 +15,14 @@ a Simple Nodejs Application Ready For Deployement & Automation
 ---
 
 - [ ] Create Nodejs Application
-- [ ] Write Unit/Intergration Tests
+- [x] Write Unit/Intergration Tests
 - [x] Docker Time and do not forget .dockerignore file
   - [x] Dockerfile
   - [x] Docker-Compose
   - [x] .dockerignore
 - [x] Setting Up Our CI/CD Pipline
-  - [x] Setup DockerCI Pipeline
+  - [x] Setup Docker CI
+  - [x] Setup Nodejs CI
 - [x] Configure Our Secretes
 - [ ] Prepare the Deployment Target
 
