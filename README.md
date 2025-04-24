@@ -22,7 +22,7 @@ a Simple Nodejs Application Ready For Deployement & Automation
   - [x] .dockerignore
 - [x] Setting Up Our CI/CD Pipline
   - [x] Setup DockerCI Pipeline
-- [ ] Configure Our Secretes
+- [x] Configure Our Secretes
 - [ ] Prepare the Deployment Target
 
 # Bonus

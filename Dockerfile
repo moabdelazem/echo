@@ -5,7 +5,6 @@ FROM node:23-alpine AS build
 WORKDIR /code
 
 # Copy package.json and package-lock.json (or yarn.lock, etc.)
-# This leverages Docker layer caching for dependencies
 COPY package*.json .
 
 # Install all dependencies (including dev dependencies) needed for the build process
@@ -14,8 +13,7 @@ RUN npm install
 # Copy the rest of the application source code
 COPY . .
 
-# Run the build script defined in package.json (e.g., tsc, webpack)
-# This should output artifacts to a directory (commonly 'dist')
+# Run the build script defined in package.json 
 RUN npm run build
 
 # Stage 2: Production Runner Stage
@@ -36,12 +34,10 @@ RUN npm install --omit=dev
 COPY --from=build /code/dist ./dist
 
 # Switch to the non-root 'node' user provided by the Node.js image
-# Enhances security by avoiding running as root
 USER node
 
 # Document the port the application will listen on internally
 EXPOSE 8000
 
 # Define the command to run the application
-# Assumes the entry point is 'server.js' inside the 'dist' folder
 CMD [ "node", "dist/server.js" ]
